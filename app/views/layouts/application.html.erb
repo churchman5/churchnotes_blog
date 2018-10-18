@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Churchnotes</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +12,14 @@
   </head>
 
   <body>
+    <header id="main_navigation" class="clearfix">
+      <a href="#" class="name">Churchnotes</a>
+      <nav>
+        <%= link_to "Articles", posts_path %>
+        <a href"#">Projects</a>
+        <a href"#">Contact</a>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
